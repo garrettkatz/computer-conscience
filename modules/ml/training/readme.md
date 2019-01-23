@@ -36,21 +36,21 @@ Assign this reading to students ahead of the lab:
 - [Pro Publica methodology](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm) (sections "How we acquired data" and "How we defined recidivism")
 - [Meaning of "Misdemeanor" (vs "Felony")](https://en.wikipedia.org/wiki/Misdemeanor)
 
-Prepare a csv file with columns for the full names, first names, and last names of your students.  See [data/students.csv](data/students.csv) for an example that you can overwrite.
+Prepare a csv file with columns for the full names, first names, and last names of your students.  See [data/students.csv](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/data/students.csv) for an example that you can overwrite.
 
-Run the [preproc.py](preproc.py) script.  This chooses a random sample of subjects from the included compas dataset, one subject per student in your class.  It then replaces the original names of the sampled subjects with your students' names.  Finally, it produces the following files:
+Run the [preproc.py](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/preproc.py) script.  This chooses a random sample of subjects from the included compas dataset, one subject per student in your class.  It then replaces the original names of the sampled subjects with your students' names.  Finally, it produces the following files:
 
-- [data/sample.csv](data/sample.csv): The data for sampled, renamed subjects.
-- [data/sample_anonymized_unlabeled.csv](data/sample_anonymized_unlabeled.csv): The sample data after removing names and labels (i.e., whether the subject was a recidivist).  The first column is an ID number used to identify datapoints in lieu of student names.
-- [data/assignments.csv](data/assignments.csv): Randomly assigns each student one anonymous, unlabeled datapoint for them to label.
+- [data/sample.csv](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/data/sample.csv): The data for sampled, renamed subjects.
+- [data/sample_anonymized_unlabeled.csv](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/data/sample_anonymous_unlabeled.csv): The sample data after removing names and labels (i.e., whether the subject was a recidivist).  The first column is an ID number used to identify datapoints in lieu of student names.
+- [data/assignments.csv](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/data/assignments.csv): Randomly assigns each student one anonymous, unlabeled datapoint for them to label.
 
-Using your method of choice (e.g., google sheet), distribute the anonymous, unlabeled data to the students, and tell each of them the ID that they were assigned to label.  They should choose a label (recidivist vs not) using their best guess, based on the features of the anonymous subject they were assigned (age, number of prior convictions, etc.).  Collect all of their responses into a new csv file with the same format but labels filled in.  See [data/sample_anonymized_labeled.csv](data/sample_anonymized_labeled.csv) for an example that you can overwrite.
+Using your method of choice (e.g., google sheet), distribute the anonymous, unlabeled data to the students, and tell each of them the ID that they were assigned to label.  They should choose a label (recidivist vs not) using their best guess, based on the features of the anonymous subject they were assigned (age, number of prior convictions, etc.).  Collect all of their responses into a new csv file with the same format but labels filled in.  See [data/sample_anonymous_labeled.csv](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/data/sample_anonymous_labeled.csv) for an example that you can overwrite.
 
-Run the script [postproc.py](postproc.py).  This adds a new column to sample.csv called "recidivist guess" and populates it with the students' guesses for the labels.  The resulting data is saved to the file [data/training_data.csv](data/training_data.csv).
+Run the script [postproc.py](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/postproc.py).  This adds a new column to sample.csv called "recidivist guess" and populates it with the students' guesses for the labels.  The resulting data is saved to the file [data/training_data.csv](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/data/training_data.csv).
 
 ## Lab activity
 
-The ipython notebook [lab.ipynb](lab.ipynb) contains a number of exercises of increasing complexity in which students wrangle the training data and then train a decision tree classifier on it.  Each cell has a comment with instructions followed by a code solution.  Partially or completely erase the code as appropriate for your students' background.  Then distribute your version of the notebook during the programming lab session.
+The ipython notebook [lab.ipynb](https://github.com/garrettkatz/computer-conscience/blob/master/modules/ml/training/lab.ipynb) contains a number of exercises of increasing complexity in which students wrangle the training data and then train a decision tree classifier on it.  Each cell has a comment with instructions followed by a code solution.  Partially or completely erase the code as appropriate for your students' background.  Then distribute your version of the notebook during the programming lab session.
 
 ## Debrief
 
