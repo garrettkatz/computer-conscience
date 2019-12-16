@@ -2,6 +2,174 @@
 layout: default
 ---
 
+<h2>Introduction</h2>
+<p>Computers play a pivotal role in today's world. They provide several benefits to different parts of society.  It has led to many technological breakthroughs in medicine, education, businesses, entertainment, transportation, etc. These technological solutions are designed by people who are trained either formally or informally on the design of computing systems. It is no doubt that computing professionals are a huge part of this technological movement and that their actions have great societal ramifications. As a result of this, technologists are always conscientized on the impact of their solutions on society and the world at large. In the United States, the criteria for accreditation of Information Systems program <a href = "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2017-2018/#2">requires</a> that computer ethics be part of the curriculum. 
+	
+<p> <a href="https://www.blackwellpublishing.com/content/BPL_Images/Content_store/Sample_chapter/9781855548442/CEAC01.pdf">According to Moor</a>, computer ethics is the analysis of nature and social impact of computer technology and the corresponding formulation and justification of policies for the ethical use of such technology. Computer technology is used to broadly capture computers and their associated technologies. Moor argues there are three kinds of invisibility factors which have ethical significance. These invisibility factors are invisible abuse, invisible programming values and invisible complex calculation. 
+	
+<p>Invisible abuse occurs when one intentionally utilizes the invisible operations of a system to engage in an unethical conduct.  An example of invisible abuse is the case where a programmer who implements a virtual assistant decides to eavesdrop the conversation of users of the application. Invisible programming values are those subtle but important factors embedded in the system. An example will be a program designed to report wrongdoings of bus drivers. Such an application will need to take into account the number and kinds of people who use the system in order to provide a better solution to address concerns equally. In present times, computers are capable of performing complex calculations which can be beyond human's comprehension. Even though these complex calculations might be correctly implemented to do what is supposed to do. A concern arises when one takes advantage of the complexity of a program to satisfy their own unethical needs. 
+	
+<p>In the department of electrical engineering and computer science, all undergraduates are required to take the course ethical aspects of engineering and computer science. The objectives of this <a href="http://coursecatalog.syr.edu/preview_course_nopop.php?catoid=3&coid=9883">course</a> are: improve students' awareness of the wider social context in which engineers and computer science professional work; strengthen students' ability to identify and analyze various ethical issues they will encounter as technology professionals; familiarize students with the code of ethics governing the profession they aspire to take; equip students with moral reasoning skills in making ethical decisions; help students recognize and avoid various psychological traps that could lead to unethical behavior. Different universities offering programs related to technology have similar course(s). While such courses are very helpful in conscientizing students in making decisions as technology professionals, we believe students need more than an independent course introducing them to ethics as engineers and computing professionals. Even though a student might successfully grasp the content of this course, students might struggle in knowing or understanding how to specifically apply these concepts to their profession. We believe ethics should be part of the fundamental courses taken as engineering and computing professionals. Inculcating ethics in these courses will not only provide specific applications to the course but also reinforce the need to think ethically at various stages in their academic pursuit.
+	
+	
+	
+
+<h2>Motivation</h2>
+<p> <a href="http://web.mit.edu/fnl/volume/311/silbey.html">According to Sibley</a>, standard models of teaching ethics fail because the diagnosis and remedy share a basic misconception: that corporate and professional misconduct are problems caused by some few weak, uninformed, or misguided individuals making independently poor choices. This she argues is not the case and it is because most problems arising in different companies are interpreted and reported as anecdote. Such anecdotes are not able to establish the links connecting the different stories. In Sibley's words, it is common for students to complete degrees without any notice, no less concerted attention, to the processes and structures organizing human action, and accumulating power. She argues further that institutions fail to provide students who will soon be professionals with the tools needed to recognize the social structures through which individual action is channeled and skills need to make their way in the world.
+
+<h2>Ethics in Other Disciplines</h2>
+<h3>Outcomes of teaching ethics</h3>
+<p> Some of the major outcomes of teaching ethics are:
+<ol>
+	<li>Students should be able to recognize ethical dilemmas and the need to consider different viewpoints in such situations. For example, how much customer data protection is sufficient. If as a result of a system designed, customer data is collected in the process and a government organization requests for such information. Is it right to give out such data? why and why not?</li>
+	<li>Students should be able to assess the impact of their decisions in designing and implementing computing solutions. For example, a student who wants to collect data on the needs of students to design a system to address these specified needs should understand the implications of the data collection process. This data collection could end up focusing on only some few departments, student groups, etc.</li>
+	<li>Students should identify the various platforms within which their systems will be operating and the differences between these identified platforms.</li>
+	<li>Students should identify the various environments within which their systems will be operating and the differences between these identified environments</li>
+	<li>Students should understand the limitations of their abilities in the design and implementation of systems and make conscious efforts to prevent the abuse of their knowledge in the operation of such systems.</li>
+	<li>Students should be able to identify various forms of algorithmic bias (pre-existing, technical, emerging, etc.) that exist in the design and implementation of computing systems and understand the need to take pragmatic steps in addressing these.</li>
+	<li>Students should be able to identify possibilities of users misusing their systems and take practical steps to prevent such misuse. </li>
+	<li>Students should ensure the address all privacy and security related concerns of their systems.</li>
+</ol>
+<figure>
+<img src="matrx.png" width="600" height="300"alt="outcomeclass"class="center">
+<figcaption>Fig.1 - Matrix of outcomes and corresponding classes capable of achieving the outcomes.</figcaption>
+</figure>
+<h3>Ethics as a separate course</h3>
+<h3>Ethics integrated with existing courses</h3>
+<h2>Modules by area</h2>
+
+<h3>Introduction to Algorithms</h3>
+<p>Researchers often want to study social network data, and ask questions like: 'How many friends do people have on average?', 'Are people mostly friends with others of the same gender?', or 'Are any segments of the population very segregated?'  However, before answering these questions, we first have to collect data!
+
+<p>Snowball sampling is a technique originally developed by sociologists for collecting graph data.  Snowball sampling begins by recruiting one person (often referred to as the "seed"). That person is asked to recruit some friends who have not already been recruited. Each person recruits 5 friends at random (or fewer if they have less than 5 friends).  'At random' means that if you consider the set of all of a person's friends who have not yet been recruited, all are equally likely to be selected.  The process continues until the sample size is met. 
+
+<p>Ideally, a graph sample generated by this process will be representative of the complete graph.  For example, if 50% of the nodes in the complete graph are women, 50% of nodes in the sample should be women.  However, this does not always occur.  Your goal in this lab is to investigate how graph samples can be 'skewed'.  
+
+<p>Included with this exercise is a <a href="modules/introalgs/DATA">DATA</a> folder containing files with a list of nodes and edges.  Each node has a 'gender' attribute and an 'age' attribute.  Please read the <a href="modules/introalgs/DATA/README.hml">README</a> file included.
+<ol>
+	<li>Implement the snowball sampler described above using any programming language of choice.</li>
+	<li>Obtain samples using the following as seeds.  For each seed, run 100 trials, where you collect a total of 200 nodes in each trial:</li>
+	<ol type="a">
+		<li>852</li>
+		<li>1052</li>
+		<li>2150</li>
+		<li>1344</li>
+		<li>1959</li>
+		<li>2592</li>
+		<li>143</li>
+		<li>795</li>
+		<li>1632</li>
+	</ol>
+<li>Which one of the above seed options is the best seed choice and why?</li>
+<li>Write a paragraph discussing the differences between the samples returned by the 9 seeds?</li>
+<li>In class, we've discussed different ways to evaluate algorithms- running time, space usage, etc.  Does this lab suggest any other ways of evaluating?</li>
+<li>Please write a few sentences with feedback on this assignment!  Was it useful?  Was it interesting?  Should I include more programming assignments next time I teach the class?  Was the amount of time right for the amount of work? </li>
+</ol>	
+
+
+
+	
+<h3>Introduction to AI</h3>
+<ol>
+<li>Train a machine-learning model (e.g. perceptron) to predict "recidivist'', on the basis of the observed variables (DOB, gender, race, age, number of priors).  Try encoding age and number of priors both as categorical variables and as continuous variables.  For each encoding, answer:</li>
+<ul>
+	<li>What is the training accuracy of your model?</li>
+	<li>What is its generalization accuracy on the test set?</li>
+	<li>What are the false positive and false negative rates in each case?</li>
+</ul>
+
+
+<li>Repeat the previous question, instead training the model to predict the COMPAS-style "recidivism risk score''.</li>
+<li>Repeat the previous question, instead training the model on the historical data for which datapoints were actually recidivists.</li>
+<li>Consider using a decision threshold T for predicting recidivism based on the COMPAS-style risk score: classify the datapoint as a recidivist iff the risk score is > T.  For each T = 1,...,9, what is the accuracy, false positive, and false negative rate? </li>
+
+<li>How good do you think you/your classmates were at guessing recidivism
+based on the observed variables?</li>
+<ul>
+	<li>Extremely good</li>
+	<li>Somewhat good</li>
+	<li>Neither good nor bad</li>
+	<li>Somewhat bad</li>
+	<li>Extremely bad</li>
+</ul>
+
+<li>How good to you think COMPAS-style risk scores are at predicting recidivism?</li>
+<ul>
+	<li>Extremely good</li>
+	<li>Somewhat good</li>
+	<li>Neither good nor bad</li>
+	<li>Somewhat bad</li>
+	<li>Extremely bad</li>
+</ul>
+
+<li>How surprised were you by the results for the various models?</li>
+<ul>
+	<li>Extremely surprised</li>
+	<li>Somewhat surprised</li>
+	<li>Neither surprised nor unsurprised</li>
+	<li>Somewhat unsurprised</li>
+	<li>Extremely unsurprised</li>
+</ul>
+<li>What do you think is worse?</li>
+<ul>
+	<li>False negatives</li>
+	<li>False positives</li>
+</ul>
+
+<li>For the best false negative/positive rates on any of your models, do you
+consider that an acceptable performance to use a tool like this in the legal
+system?</li>
+<ul>
+	<li>Yes</li>
+	<li>No</li>
+</ul>
+
+<li>Which do you think is best?</li>
+<ul>
+	<li>Computers decide convictions instead of people</li>
+	<li>Humans decide convictions but receive suggestions from a computer</li>
+	<li>Humans decide convictions without suggestions from a computer</li>
+</ul>
+</ol>
+<h3>Software Design and Specification</h3>
+<p>In the past few weeks massive floods have submerged many areas of Old Seoul. There are a number of people stranded in those areas without any food, potable water and basic life support. Reports confirm a large number of people have been critically injured and seek medical help. Veidt Enterprises is committed to help the government overcome this disaster and help alleviate the people’s suffering.
+
+<p>Veidt Enterprises is going to build software and a team to manage a fleet of drones that will supply goods (in the form of food, medicines, potable water or other reasonably sized items) to people stranded in the disaster affected areas.
+	
+<p>The functional requirements of this software include:
+<ul>
+	<li>Maintain real time information and history of drone statuses.</li>
+	<li>Maintain real time information and history of drone flights, schedules, items dropped or returned.</li>
+	<li>Schedule drones based on requirement of stranded people, available relief items, availability of drones, time constraints of items and delivery timelines.</li>
+	<li>Allow relevant users to edit, delete or add schedules or drone status.</li>
+	<li>Maintain backups and High Availability of software.</li>
+	<li>Edit drone schedule when the drone is in flight.</li>
+	<li>Raise alerts when a drone goes missing, drone crashes, drone damages items.</li>
+</ul>
+
+<p>Some use cases of the system are:
+<ul>
+	<li>ARC: Assign/Reassign coordinator</li>
+	<li>MDS: Modify drone schedule</li>
+	<li>BD: Backup data</li>
+	<li>USP: Update stranded people info.</li>
+	<li>USD: Update status of drones</li>
+	<li>VDS: View drone schedule info.</li>
+	<li>ARD: Add or remove drone</li>
+	<li>UFM: Update food/meds. Inventory</li>
+	<li>UVI: Update volunteer info</li>
+</ul>
+
+<p> Design a use case diagram for the system described above.
+
+<p>Some ethical thoughts include:
+
+<ul>
+	<li>Privacy concerns: Which pictures are appropriate for drones to take? How are victims data preserved?</li>
+	<li>Legal concerns: What are the local laws governing different medications?</li>
+	<li>Deciding who to serve: Who needs to be prioritized (little ones or adults)?</li>
+</ul>
+
 <h2>Hello world wide web!</h2>
 
 <p>Welcome to computer-conscience, a set of plug-and-play modules you can use in your core CS curriculum courses.
